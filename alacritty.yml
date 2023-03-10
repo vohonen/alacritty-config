@@ -1,0 +1,117 @@
+colors:
+
+  # system76 colors
+  primary:
+    background: "#222222" 
+    foreground: "#cccccc"
+  normal:
+    black: "#242424"
+    red: "#f15d22"
+    green: "#6eaa76"
+    yellow: "#eece61"
+    blue: "#18a9c7"
+    magenta: "#D16D9E"
+    cyan: "#7ec589"
+    white: "#D8DEE9"
+    orange: "#d19a66"
+    purple: "#ad7fa8"
+  # bright:
+  #   black_br: "#475072"
+  #   red_br: "#d6616b"
+  #   green_br: "#58cd8b"
+  #   yellow_br: "#ffe37e"
+  #   blue_br: "#84cee4"
+  #   magenta_br: "#b8a1e3"
+  #   cyan_br: "#59f0ff"
+  #   white_br: "#f2f2f2"
+  #   orange_br: "#f6a878"
+  #   pink_br: "#df97db"
+
+
+  # Nightfox colors
+  # primary:
+  #   background: "#192330"
+  #   foreground: "#cdcecf" 
+  # normal:
+  #   black: "#393b44" 
+  #   red: "#c94f6d"  
+  #   green: "#81b29a"
+  #   yellow: "#dbc074"
+  #   blue: "#719cd6"
+  #   magenta: "#9d79d6"
+  #   cyan: "#63cdcf"
+  #   white: "#dfdfe0"
+  #   orange: "#f4a261"
+  #   pink: "#d67ad2"
+  # bright:
+  #   black_br: "#475072"
+  #   red_br: "#d6616b"
+  #   green_br: "#58cd8b"
+  #   yellow_br: "#ffe37e"
+  #   blue_br: "#84cee4"
+  #   magenta_br: "#b8a1e3"
+  #   cyan_br: "#59f0ff"
+  #   white_br: "#f2f2f2"
+  #   orange_br: "#f6a878"
+  #   pink_br: "#df97db"
+
+window.opacity: 1.0
+
+# for some reason the dimensions are not working
+window:
+  dimensions:
+    columns: 100
+    lines: 26
+
+font:
+  normal:
+    family: "JetBrainsMono Nerd Font"
+    style: Regular
+  bold:
+    family: "JetBrainsMono Nerd Font"
+    style: Bold
+  italic:
+    family: "JetBrainsMono Nerd Font"
+    style: Italic
+  bold_italic:
+    family: "JetBrainsMono Nerd Font"
+    style: Bold Italic
+
+  # Point size
+  size: 14.0
+
+  # offset:
+  #   x: 0
+  #   y: 0
+  # glyph_offset:
+  #   x: 0
+  #   y: 0
+
+window:
+  padding:
+    x: 0
+    y: 0
+
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 10000
+
+  # Number of lines the viewport will move for every line scrolled when
+  # scrollback is enabled (history > 0).
+  multiplier: 10
+
+# If `true`, bold text is drawn using the bright color variants.
+draw_bold_text_with_bright_colors: true
+
+selection:
+  semantic_escape_chars: ',│`|: "'' ()[]{}<>'
+  save_to_clipboard: true
+
+live_config_reload: true
+
+key_bindings:
+  - { key: Key0, mods: Control, action: ResetFontSize }
+  - { key: Plus, mods: Control, action: IncreaseFontSize }
+  - { key: Minus, mods: Control, action: DecreaseFontSize }
+  - { key: N, mods: Control, action: SpawnNewInstance }
