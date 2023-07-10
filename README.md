@@ -4,7 +4,7 @@ This is my Alacritty configuration, clone the repo to configs directory with nam
 
 ```shell
 cd ~/.config
-git clone git@github.com:vohonen/alacritty-config.git
+git clone git@github.com:vohonen/alacritty-config.git alacritty
 ```
 
 To install Alacritty on your machine, follow the [installation guide](https://github.com/alacritty/alacritty/blob/master/INSTALL.md). Notice, that for a new machine one might have to also install the dependencies mentioned in the prerequisites, and the third section "Post Build" is also important for complete features.
