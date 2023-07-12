@@ -16,7 +16,13 @@ sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emula
 sudo update-alternatives --config x-terminal-emulator
 ```
 
-The first command adds Alacritty from its installation path into potential terminal emulators, and the latter command updates the system's list of such emulators. The number 50 is the priority which sets Alacritty at the top of the priority list and hence default option. `Ctrl+alt+t` should now open Alacritty.
+Sometimes above doesn't work, i.e. even with the highest priority Alacritty is not preferred as the terminal emulator. If this happens, run the following:
+
+```shell
+gsettings set org.gnome.desktop.default-applications.terminal exec cmd_to_open_terminal_of_choice
+```
+
+This is equivalent to working from the GUI `dconf-editor > org > gnome > desktop > application > terminal` and setting `alacritty` as the custom value.
 
 The `alacritty.yml` file from this repo consists of the Alacritty configuration. It uses the [JetBrains Mono font](https://www.jetbrains.com/lp/mono/), so after cloning make sure you have the font installed. The following commands download and unzip the font family to current user's font directory. (Notice that such a directory may not exist, and in these cases it must be created first)
 
