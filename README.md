@@ -19,7 +19,7 @@ sudo update-alternatives --config x-terminal-emulator
 Sometimes above doesn't work, i.e. even with the highest priority Alacritty is not preferred as the terminal emulator. If this happens, run the following:
 
 ```shell
-gsettings set org.gnome.desktop.default-applications.terminal exec cmd_to_open_terminal_of_choice
+gsettings set org.gnome.desktop.default-applications.terminal exec alacritty
 ```
 
 This is equivalent to working from the GUI `dconf-editor > org > gnome > desktop > application > terminal` and setting `alacritty` as the custom value.
